@@ -702,10 +702,6 @@ footer {
 		padding: 6px;
 	}
 
-	.fa-chevron-right {
-		display: none !important;
-	}
-
 	.header-bottom {
 		display: none;
 	}
