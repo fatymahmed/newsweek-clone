@@ -415,10 +415,6 @@
         margin-left: auto;
         margin-right: auto;
     }
-
-
-
-    
     
 .bottom {
     margin-top: 30px;
@@ -562,15 +558,42 @@
     margin-bottom: 15px;
 }
 
+
+.subscribe-footer,
+.subscribe-f{
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px 0;
+    border-top: 2px solid #f4f5f6;
+}
+.subscribe-f .row-title{
+    text-align: left;
+    font-size: 16px;
+    color: #f72210;
+    margin-top: 20px;
+}
+.subscribe-f .image-wrapper{
+    display: inline-block;
+    position: relative;
+    padding-bottom: 13px;
+    padding-right: 90px;
+}
+.subscribe-f .subscribe-footer .image-wrapper>div:last-of-type{
+    position: absolute;
+    top: 13px;
+    left: 80px;
+}
+.image-wrapper{
+    margin-bottom: 15px;
+}
+.subscribe-footer .image-container{
+    width: 170px;
+    height: 228px;
+}
 .subscribe-f .info h2{
     font-size: 20px;
     font-weight: 800;
 }
-
-.subscribe-footer{
-    padding: 30px 0 30px 0;
-}
-
 .subscribe-f .info p{
     font-size: 15px;
     margin: 25px 0;
@@ -583,29 +606,25 @@
     text-transform: uppercase;
     background-color: #f72210;
 }
-
-
+.subscribe-footer{
+    padding: 30px 0 30px 0;
+}
 
 .subscribe-footer-news .image-container{
     background: rgba(0, 0, 0, 0) url("https://g.newsweek.com/themes/newsweek/images/subscribe-img2.gif") no-repeat scroll center center / cover;    height: 160px;
-    width: 100%;
-    height:300px;
 }
 .subscribe-footer-news .info{
     border: 1px solid #d9d9d9;
     border-top: none;
     padding: 25px 0;
 }
-.subscribe-text{
-    color:black;
-    text-align: initial;
-    margin-left: 20px;
-}
+
+/* subscribe section  */
+
+
 .align-txt{
     text-align: initial;
 }
-
-
 
 
 footer {
@@ -679,7 +698,13 @@ footer {
 		top: 8px;
 	}
 
+    .image-wrapper{
+        display: block;
+    }
 
+    .subscribe-text{
+        clear:none;
+    }
 	.sticky-navbar {
 		padding: 3px 0px;
 	}
@@ -716,16 +741,30 @@ footer {
     .subscribe-footer-news .image-container{
         width: 180%;
     }
+    .opinion div info a{
+        float:right;
+    }
+    .lat{
+        float:left;
+    }
+    
 }
 
 @media (max-width: 767px) {
-	.image {
-		width: 258px;
-	}
+	.lat{
+        width: 258px;
+        float:left;
+    }
 
+   
 	.image-article {
 		height: 52vw;
     }
+    .links span{
+        margin-top:10px;
+    }
+}
+@media only screen and (min-width: 768px){
     .subscribe-footer{
         display: flex;
         align-items: center;
@@ -749,8 +788,12 @@ footer {
         border-left: none;
         
     }
-
-	.media-icons {
-		text-align: left;
-	}
+}
+@media only screen and (min-width: 992px) {
+    .subscribe-footer-news .info{
+        height: 315px;
+    }
+    .subscribe-footer-news .image-container{
+        width: 180%;
+    }
 }
