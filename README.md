@@ -2,7 +2,7 @@
 
 ### A clone of the [newsweek](https://www.newsweek.com/) webpage
 
-![screenshot](./app_screenshot.png)
+![screenshot](./assets/Screenshot.png)
 
 
 Additional description about the project and its features.
